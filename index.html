@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Laboratorio Matemático Interactivo</title>
+
+    <link rel="stylesheet" href="estilos.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Laboratorio Matemático Interactivo</h1>
+        <p>Resuelve problemas utilizando algoritmos y JavaScript</p>
+    </header>
+
+    <main>
+
+        <!-- EJERCICIO 1: SISTEMA DE ECUACIONES -->
+
+        <section>
+            <h2>1. Sistema de ecuaciones lineales</h2>
+
+            <p>
+                Resuelve un sistema de dos ecuaciones con dos incógnitas:
+            </p>
+
+            <p>
+                a·x + b·y = c<br>
+                d·x + e·y = f
+            </p>
+
+            <form id="formSistema">
+
+                <label for="a">Coeficiente a:</label>
+                <input type="number" id="a" step="any" required>
+
+                <label for="b">Coeficiente b:</label>
+                <input type="number" id="b" step="any" required>
+
+                <label for="c">Resultado de la primera ecuación:</label>
+                <input type="number" id="c" step="any" required>
+
+                <label for="d">Coeficiente d:</label>
+                <input type="number" id="d" step="any" required>
+
+                <label for="e">Coeficiente e:</label>
+                <input type="number" id="e" step="any" required>
+
+                <label for="f">Resultado de la segunda ecuación:</label>
+                <input type="number" id="f" step="any" required>
+
+                <button type="submit">Resolver sistema</button>
+
+            </form>
+
+            <p id="resultadoSistema" aria-live="polite"></p>
+        </section>
+
+
+        <!-- EJERCICIO 2: DESCUENTO -->
+
+        <section>
+            <h2>2. Calculadora de descuentos</h2>
+
+            <p>
+                Introduce el precio de un producto y el porcentaje
+                de descuento para calcular el precio final.
+            </p>
+
+            <form id="formDescuento">
+
+                <label for="precio">Precio del producto (Bs):</label>
+                <input type="number" id="precio" min="0" step="any" required>
+
+                <label for="porcentaje">Descuento (%):</label>
+                <input type="number" id="porcentaje"
+                       min="0" max="100" step="any" required>
+
+                <button type="submit">Calcular precio</button>
+
+            </form>
+
+            <p id="resultadoDescuento" aria-live="polite"></p>
+        </section>
+
+
+        <!-- EJERCICIO 3: NUMEROS PRIMOS -->
+
+        <section>
+            <h2>3. Identificador de números primos</h2>
+
+            <p>
+                Introduce un número entero positivo para determinar
+                si es primo o compuesto.
+            </p>
+
+            <form id="formPrimo">
+
+                <label for="numeroPrimo">Número entero:</label>
+                <input type="number" id="numeroPrimo"
+                       min="1" step="1" required>
+
+                <button type="submit">Analizar número</button>
+
+            </form>
+
+            <p id="resultadoPrimo" aria-live="polite"></p>
+        </section>
+
+
+        <!-- EJERCICIO 4: FIBONACCI -->
+
+        <section>
+            <h2>4. Generador de la sucesión de Fibonacci</h2>
+
+            <p>
+                Genera los primeros términos de la sucesión
+                de Fibonacci mediante un ciclo.
+            </p>
+
+            <form id="formFibonacci">
+
+                <label for="cantidadTerminos">Cantidad de términos:</label>
+                <input type="number" id="cantidadTerminos"
+                       min="1" max="50" step="1" required>
+
+                <button type="submit">Generar sucesión</button>
+
+            </form>
+
+            <p id="resultadoFibonacci" aria-live="polite"></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Laboratorio Matemático Interactivo | HTML, CSS y JavaScript</p>
+    </footer>
+
+</body>
+</html>

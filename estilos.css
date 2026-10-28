@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eef2f7;
+    color: #263238;
+}
+
+header {
+    background-color: #263b80;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    margin-top: 0;
+}
+
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 25px auto;
+}
+
+section {
+    background-color: white;
+    margin-bottom: 25px;
+    padding: 25px;
+    border-radius: 12px;
+    border-left: 6px solid #526de0;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    color: #263b80;
+    margin-top: 0;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #b8c3d6;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: 2px solid #526de0;
+    border-color: #526de0;
+}
+
+button {
+    display: block;
+    margin-top: 20px;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 6px;
+    background-color: #263b80;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4057b4;
+}
+
+#resultadoSistema,
+#resultadoDescuento,
+#resultadoPrimo,
+#resultadoFibonacci {
+    margin-top: 18px;
+    padding: 12px;
+    background-color: #edf3ff;
+    border-radius: 6px;
+    overflow-wrap: anywhere;
+    line-height: 1.7;
+}
+
+footer {
+    background-color: #263b80;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+    main {
+        width: 94%;
+    }
+
+    section {
+        padding: 18px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+}
